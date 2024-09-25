@@ -38,11 +38,11 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Kudos:
 
-_____ (Kudos!) Handles mirror words with punctuation
+**NO** (Kudos!) Handles mirror words with punctuation
 
-_____ (Kudos!) Generates output with correct punctuation & capitalization
+**NO** (Kudos!) Generates output with correct punctuation & capitalization
 
-_____ (Kudos!) Handles you --> me/I dilemma
+**NO** (Kudos!) Handles you --> me/I dilemma
 
 
 
@@ -52,17 +52,17 @@ _____ (Kudos!) Handles you --> me/I dilemma
 
 **YES** 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+**YES** 2 pt: Complies with style guidelines (missing items 1 pt each):
 
-      _____ Classes & class members all have Javadoc header comments
+      **YES** Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      **YES** Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      **YES** Adheres to Java conventions on naming & capitalization
 
       **YES** Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+     **YES** Methods avoid confusing side effects
 
 **YES** 1 pt: All required files included with submission (including completed checklist file)
 

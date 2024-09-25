@@ -41,18 +41,18 @@ class Conversation {
         String[] mirroredWith = {"you", "I", "you", "are", "your", "my", "am"};
 
         // Conversation loop
-        //help
         for (int i = 0; i < rounds; i++) {
-            // User Input
+            // Get user input
             String userInput = input.nextLine();
 
-            // Store in Transcript
+            // Store user input in odd index of transcript
             transcript[i * 2 + 1] = userInput;
 
             // Split user input into words by splitting by space
             String[] words = userInput.split(" ");
-            // String class to make response
-            String userResponse = new String();
+            // Create new string to make bot response
+            String botResponse = new String();
+            // Boolean that I will be assessing in my for loop
             boolean hasMirroredWord = false;
 
             // Loop through each word in users input
@@ -65,25 +65,26 @@ class Conversation {
                         word = mirroredWith[j];
                         hasMirroredWord = true;
                         replaced = true;
-                        break; // Exit loop once replacement is made
+                        break; // Exit loop after replacing word
                     }
                 }
-                userResponse += word + " ";
+                // Add word to bot's response
+                botResponse += word + " ";
             }
             if (!hasMirroredWord) {
-                userResponse = canned[(int) Math.random() * canned.length];
+                botResponse = canned[(int) Math.random() * canned.length];
             }
-            // Store bot response in transcript
-            transcript[i * 2 + 2] = userResponse;
+            // Store bot response in even index of transcript
+            transcript[i * 2 + 2] = botResponse;
             // Print bot response
-            System.out.println(userResponse + "?");
+            System.out.println(botResponse + "?");
         }
 
         // Goodbye message
         String goodbye = "See ya!";
         System.out.println(goodbye);
 
-        // Store goodbye message in transcript
+        // Store goodbye message in the last index of transcript
         transcript[2 * rounds + 1] = goodbye;
 
         // Print transcript
@@ -91,6 +92,7 @@ class Conversation {
         for (String line : transcript) {
             System.out.println(line);
         }
+        // Close scanner object
         input.close();
     }
 }
